@@ -2,65 +2,51 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
+  <title>Menu Locket.vn</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Trang chủ - Locket</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
-    <div class="logo">🔒 Hye Locket</div>
-    <nav>
-      <ul>
-        <li><a href="#">Trang chủ</a></li>
-        <li><a href="#">Tài khoản</a></li>
-        <li><a href="#">Dịch vụ</a></li>
-        <li><a href="#">Hỗ trợ</a></li>
-      </ul>
-    </nav>
-    <button class="login-btn">Đăng nhập</button>
+    <button id="menu-btn" onclick="toggleMenu()">☰</button>
+    <h1>Locket.vn</h1>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>Chào mừng bạn đến với Locket</h1>
-      <p>Nền tảng quản lý tài khoản an toàn, nhanh chóng.</p>
-      <a href="#" class="cta-btn">Khám phá ngay</a>
-    </section>
+  <!-- SIDEBAR -->
+  <div class="sidebar" id="sidebar">
+    <div class="balance">
+      <p>SỐ DƯ: <span class="highlight">0₫</span></p>
+      <p>GIẢM GIÁ: <span class="highlight">0%</span></p>
+    </div>
 
-    <section class="features">
-      <div class="feature-card">
-        <h2>Bảo mật</h2>
-        <p>Mọi thông tin đều được mã hóa và bảo vệ tuyệt đối.</p>
-      </div>
-      <div class="feature-card">
-        <h2>Tiện lợi</h2>
-        <p>Quản lý tài khoản dễ dàng chỉ với vài thao tác.</p>
-      </div>
-      <div class="feature-card">
-        <h2>Hỗ trợ 24/7</h2>
-        <p>Đội ngũ tư vấn luôn sẵn sàng hỗ trợ bạn.</p>
-      </div>
-    </section>
-  </main>
+    <nav class="menu">
+      <h4>MENU</h4>
+      <a href="#">🏠 Trang chủ</a>
+      <a href="#">💳 Nạp tiền</a>
+      <a href="#">🛒 Lịch sử đơn hàng <span class="badge">5</span></a>
+      <a href="#">⭐ Cấp bậc tài khoản</a>
+      <a href="#">🔌 Tích hợp API</a>
 
-  <footer>
-    <p>© 2025 Locket.vn – Bảo mật là ưu tiên hàng đầu.</p>
-  </footer>
+      <h4>DỊCH VỤ</h4>
+      <details open>
+        <summary>🎫 Tài Khoản VIP</summary>
+        <ul>
+          <li>– Locket Gold mở khóa full</li>
+          <li>– Canva Pro Full Chức Năng (Free)</li>
+          <li>– Youtube Premium</li>
+          <li>– Capcut Pro</li>
+          <li>– ChatGPT Plus giá rẻ</li>
+          <li>– Netflix Premium</li>
+          <li>– TV360 VIP</li>
+        </ul>
+      </details>
+    </nav>
+  </div>
+
+  <!-- Overlay đen mờ khi mở menu -->
+  <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-<header>
-  <button id="menu-btn" onclick="toggleMenu()">☰</button>
-  <h1>Trang chủ</h1>
-</header>
-<div class="sidebar" id="sidebar">
-  <!-- Menu ở đây -->
-  <p>MENU TRƯỢT TỪ TRÁI</p>
-</div>
-
-<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
-
-
-
