@@ -50,3 +50,37 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CapCut Pro | Đặt hàng</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>TẠO ĐƠN HÀNG CAPCUT PRO</h2>
+
+    <label>Sđt | Zalo liên hệ:</label>
+    <input type="text" id="contact" placeholder="Nhập sđt liên hệ">
+
+    <label>Gói dịch vụ:</label>
+    <div id="packages"></div>
+    <div id="service-error" class="error hidden">Vui lòng chọn gói dịch vụ cần mua</div>
+
+    <label>Số lượng cần mua:</label>
+    <input type="number" id="quantity" value="1" min="1">
+
+    <label>Ghi chú đơn hàng:</label>
+    <textarea id="note" placeholder="Nhập ghi chú đơn hàng nếu có (không bắt buộc)"></textarea>
+
+    <p><strong>Số tiền cần thanh toán: <span id="total">0</span>₫</strong></p>
+    <button onclick="submitOrder()">Tạo Đơn Hàng</button>
+  </div>
+
+  <script src="capcut.js"></script>
+</body>
+</html>
+
