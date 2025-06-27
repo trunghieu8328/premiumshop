@@ -91,3 +91,42 @@ footer {
   background-color: #eee;
   margin-top: 40px;
 }
+
+#menu-btn {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 250px;
+  height: 100%;
+  background-color: #0047AB;
+  color: white;
+  padding: 20px;
+  transition: left 0.3s ease;
+  z-index: 1001;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.overlay.show {
+  display: block;
+}
+
